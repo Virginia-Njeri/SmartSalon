@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppointmentActivity">
+
+    <ImageView
+        android:id="@+id/imgBraids"
+        android:layout_width="169dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="224dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgWigs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgWigs"
+        app:srcCompat="@drawable/img" />
+
+    <ImageView
+        android:id="@+id/imgWigs"
+        android:layout_width="196dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgBraids"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wigfiuxing" />
+
+    <TextView
+        android:id="@+id/tvWigs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="32dp"
+        android:text="wig Fixing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgWigs" />
+
+    <TextView
+        android:id="@+id/tvBraids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="129dp"
+        android:text="Braids"
+        app:layout_constraintEnd_toStartOf="@+id/tvWigs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBraids" />
+
+    <ImageButton
+        android:id="@+id/imgNails"
+        android:layout_width="161dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLocks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgLocks"
+        app:srcCompat="@drawable/img_2" />
+
+    <ImageView
+        android:id="@+id/imgLocks"
+        android:layout_width="192dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgNails"
+        app:layout_constraintTop_toBottomOf="@+id/tvWigs"
+        app:srcCompat="@drawable/img_3" />
+
+    <TextView
+        android:id="@+id/tvNails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginEnd="47dp"
+        android:text="Nails and stickons"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLocks"
+        app:layout_constraintEnd_toStartOf="@+id/tvLocks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvLocks" />
+
+    <TextView
+        android:id="@+id/tvLocks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:text="Lock and locks retarch"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="572dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
